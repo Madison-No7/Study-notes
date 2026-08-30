@@ -1164,11 +1164,66 @@ class Logger:
 **实现**：
 定义Request类：  
   定义构造函数，完成logger对象的初始化  
-  定义get和post请求实例方法  
-  方法参数：url、关键字参数(header,Params...)  
-  发起请求前打印日志：准备开始发起get请求，url:http://....
-                  接口信息是:传入的位置参数  
-  发起get/post请求，调用requests中的get/post方法，返回response对象r  
-  发起请求后打印日志：接口响应状态码:  ....
-                  接口响应内容是: ....
-
+  定义get和post请求实例方法 ,参数：url、关键字参数(header,Params...)  
+  发起请求前打印日志：
+- 准备开始发起get请求，url:http://....
+- 接口信息是:传入的位置参数  
+发起get/post请求，调用requests中的get/post方法，返回response对象r  
+发起请求后打印日志：  
+- 接口响应状态码:  ....
+- 接口响应内容是: ....
+```python
+from utils.logger_util import Logger  
+import requests  
+  
+host="http://47.108.157.13:8090/"  
+class Request:  
+    def __init__(self):  
+        self.logger=Logger.getlog()  
+  
+    def get(self,url,**kwargs):  
+        self.logger.info(f"准备开始发起get请求:{url}")  
+        self.logger.info(f"接口信息是:{kwargs}")  
+        #发起请求  
+        r=requests.get(url,**kwargs)  
+        self.logger.info(f"接口响应状态码:{r.status_code}")  
+        self.logger.info(f"接口响应内容是:{r.json()}")  
+  
+    def post(self, url, **kwargs):  
+        self.logger.info(f"准备开始发起post请求:{url}")  
+        self.logger.info(f"接口信息是:{kwargs}")  
+        # 发起请求  
+        r = requests.post(url, **kwargs)  
+        self.logger.info(f"接口响应状态码:{r.status_code}")  
+        self.logger.info(f"接口响应内容是:{r.json()}")
+```
+### 4)yaml数据读写类
+因为我们要想yaml文件中写入登录的User-Token数据，是JSON格式的数据  
+所以写入yaml文件时，一是要传入写入的yaml文件，二是JSON数据  
+yaml.safe_dump(data,stream,allow_unicode=True,sort_keys=False)  
+  
+因为读取ymal文件时，读取到是整个文档的数据，返回的是List或dict  
+我们的目的是将用户的User-Token读取出来，读取返回的是List，所以要传入一个key,就能读取出来了。  
+data=yaml.safe_load(stream)，返回 data [ key ]  
+  
+清空Yaml文件：
+以'w'的方式打开，然后pass
+```python
+import yaml  
+#data是json格式的数据  
+def write_yaml(filename,data):  
+    #'a+':追加写入 + 可以读取  
+    with open('./data/'+filename+'.yaml','a+',encoding='utf-8') as f:  
+        yaml.safe_dump(data,stream=f,allow_unicode=True,sort_keys=False)  
+  
+#读取(safe_load)  
+def read_yaml(filename,key):  
+    with open('./data/'+filename+'.yaml','r',encoding='utf-8') as f:  
+        y=yaml.safe_load(stream=f)  
+        return y[key]  
+  
+#清除yaml文件  
+def clear_yaml(filename):  
+    with open('./data/'+filename+'.yaml','w',encoding='utf-8') as f:  
+        pass
+```
