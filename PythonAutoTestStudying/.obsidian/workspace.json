@@ -1,0 +1,279 @@
+{
+  "main": {
+    "id": "ce4fb3bc7a043e25",
+    "type": "split",
+    "children": [
+      {
+        "id": "07d095f5a31ae5e5",
+        "type": "tabs",
+        "dimension": 64.59107806691449,
+        "children": [
+          {
+            "id": "487710c6f23f225e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Al 赋能测试.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Al 赋能测试"
+            },
+            "group": "96a4548aafb58b8a"
+          }
+        ]
+      },
+      {
+        "id": "f86ad705c9ab861f",
+        "type": "tabs",
+        "dimension": 35.4089219330855,
+        "children": [
+          {
+            "id": "a6445c80e3535a94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Al 赋能测试.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Al 赋能测试 的大纲"
+            },
+            "group": "96a4548aafb58b8a"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "181c35d7e61bccc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "301f3a3f70a1202f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f38f80cce0310c9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c8daf81771ae0544",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "38c541bc2cb111d7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1b0653b39e05d46c",
+    "type": "split",
+    "children": [
+      {
+        "id": "79a715cae9300d8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03c35f4f2dba65ca",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PythonAutoTestStudying/接口自动化测试.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "de5eebfd5bfb22ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "dcbfe5df924a40b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "c4d40613f5724726",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9a51942b06e4d2b2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "07e42b0de1e08a8d",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-agent-chat-view",
+              "state": {},
+              "icon": "copilot-agent",
+              "title": "Copilot Agent"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 504.699951171875,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "copilot:Open Copilot Agent Chat": false
+    }
+  },
+  "active": "487710c6f23f225e",
+  "lastOpenFiles": [
+    "Python--网络爬虫之聚焦爬虫.md",
+    "PythonAutoTestStudying/postman界面介绍.jpg",
+    "images/Pasted image 20260828143620.png",
+    "PythonAutoTestStudying/pytest框架.md",
+    "PythonAutoTestStudying/接口自动化测试（HTTP API测试）.md",
+    "PythonAutoTestStudying/Python-位置参数和关键字参数.md",
+    "PythonAutoTestStudying/关于Python中的系统全局环境和项目级虚拟环境.md",
+    "images/Pasted image 20260829165604.png",
+    "images/Pasted image 20260829164233.png",
+    "images/Pasted image 20260829163655.png",
+    "PythonAutoTestStudying/获取调用的方法名的函数.md",
+    "PythonAutoTestStudying/自动化测试实战-博客系统.md",
+    "PythonAutoTestStudying/webdriver模块中Chrome类构造函数的两大核心参数.md",
+    "PythonAutoTestStudying/web自动化测试.md",
+    "PythonAutoTestStudying/web自动化测试脚本.canvas",
+    "images/Pasted image 20260828212109.png",
+    "PythonAutoTestStudying/接口自动化测试流程.canvas",
+    "PythonAutoTestStudying/Python包是什么？.md",
+    "images/Pasted image 20260828202751.png",
+    "images/Pasted image 20260828201501.png",
+    "images/Pasted image 20260828201324.png",
+    "images/Pasted image 20260828201233.png",
+    "PythonAutoTestStudying/正则表达式规则.md",
+    "PythonAutoTestStudying/博客系统自动化测试用例设计.canvas",
+    "未命名.canvas",
+    "【Linux】Vim高效编辑.md",
+    "Al 赋能测试.md",
+    "copilot/skills/copilot-youtube-transcript/SKILL.md",
+    "PythonAutoTestStudying/自动化软断言插件.md",
+    "copilot/skills/obsidian-cli/SKILL.md",
+    "copilot/skills/obsidian-cli/LICENSE",
+    "copilot/skills/obsidian-cli",
+    "copilot/skills/json-canvas/SKILL.md",
+    "copilot/skills/json-canvas/LICENSE",
+    "copilot/skills/json-canvas/references/EXAMPLES.md",
+    "copilot/skills/json-canvas/references",
+    "copilot/skills/json-canvas",
+    "copilot/skills/obsidian-bases/SKILL.md",
+    "copilot/skills/obsidian-bases/LICENSE",
+    "copilot/skills/obsidian-bases/references/EXAMPLES.md",
+    "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
+    "copilot/skills/obsidian-bases/references",
+    "copilot/skills/obsidian-bases",
+    "copilot/skills/obsidian-markdown/SKILL.md",
+    "copilot/skills/obsidian-markdown/LICENSE",
+    "copilot/skills/obsidian-markdown/references/PROPERTIES.md",
+    "copilot/skills/obsidian-markdown/references/EMBEDS.md",
+    "copilot/skills/obsidian-markdown/references/CALLOUTS.md",
+    "copilot/skills/obsidian-markdown/references"
+  ]
+}
