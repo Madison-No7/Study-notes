@@ -1156,3 +1156,19 @@ class Logger:
         return cls.logger
 ```
 ### 3)接口请求类
+封装get与post方法：  
+因为每次get或post都要打印日志信息，如果不将get或post封装起来  
+每个请求时，都需要手动输入打印的日志信息，会让代码存在许多重复的地方  
+因为要打印日志，需要引入日志模块  
+因为要使用到get和post请求，需要引入requests模块  
+**实现**：
+定义Request类：  
+  定义构造函数，完成logger对象的初始化  
+  定义get和post请求实例方法  
+  方法参数：url、关键字参数(header,Params...)  
+  发起请求前打印日志：准备开始发起get请求，url:http://....
+                  接口信息是:传入的位置参数  
+  发起get/post请求，调用requests中的get/post方法，返回response对象r  
+  发起请求后打印日志：接口响应状态码:  ....
+                  接口响应内容是: ....
+
